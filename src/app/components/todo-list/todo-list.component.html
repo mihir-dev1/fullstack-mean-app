@@ -1,0 +1,17 @@
+<div class="container">
+  <input type="text" [(ngModel)]="todoItem" (keyup)="addValue($event)">
+  <button (click)="addTodoItem()">{{isUpdate ? 'Update' : 'Add Item'}} </button>
+  @if (isUpdate) {
+    <button (click)="cancelUpdate()">Cancel Update</button>
+  }
+
+  @for (item of todoList; track $index) {
+    <ul>
+      <li>{{item.id}}</li>
+      <li>{{item.title}}</li>
+      <li (click)="updateItem(item.id)"><Button>Update</Button></li>
+      <li (click)="deleteItem(item.id)"><Button>Delete</Button></li>
+    </ul>
+  }
+
+</div>

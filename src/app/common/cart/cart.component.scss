@@ -1,0 +1,29 @@
+.example-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  
+  .cart-button {
+    background-color: #1976d2;  /* Accent color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cart-button:hover {
+    background-color: #1565c0;  /* Darker shade of blue */
+    transform: translateY(-3px);  /* Small hover effect */
+  }
+  
+  .cart-button mat-icon {
+    margin-right: 8px;
+  }
+  
+  .button-text {
+    margin-left: 8px;
+  }
+  

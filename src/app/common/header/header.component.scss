@@ -1,0 +1,13 @@
+mat-toolbar.mat-toolbar.mat-primary.mat-toolbar-single-row {
+    background: #005cbb96;
+    color: white;
+}
+
+.active {
+    color: red !important;
+}
+
+.spacer {
+    flex: 1 1 auto; /* This will push the next item (app-cart) to the right */
+  }
+  
